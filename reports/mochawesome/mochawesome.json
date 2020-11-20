@@ -1,0 +1,122 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-11-20T11:24:59.504Z",
+    "end": "2020-11-20T11:25:00.624Z",
+    "duration": 1120,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "495f20ea-8b3b-4ce7-a005-19d9b72ea810",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "e7ef984e-1af6-4617-bf9e-87596da43f16",
+        "title": "@get data",
+        "fullFile": "/Users/m.adriansahakbarpratama/Documents/bukalapak/pretest_api_automation/api/test/api_get_test.js",
+        "file": "/api/test/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@get data success",
+            "fullTitle": "@get data @get data success",
+            "timedOut": false,
+            "duration": 1111,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "const response = await api_get_request.getDataList();\nexpect(response.status).to.equal(200);\n//expect(response.userId).to.be.a('number');\n//expect(id).to.be.a('number');\n//expect(title).to.be.a('string');\n//expect(body).to.be.a('string');",
+            "err": {
+              "message": "AssertionError: expected 404 to equal 200",
+              "estack": "AssertionError: expected 404 to equal 200\n    at Context.it (api/test/api_get_test.js:8:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+              "diff": "- 404\n+ 200\n"
+            },
+            "isRoot": false,
+            "uuid": "cfda4c71-970f-44da-86fe-f81557b58352",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "cfda4c71-970f-44da-86fe-f81557b58352"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 1111,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 10000
+      },
+      {
+        "uuid": "6107872c-ac36-4c98-b219-16ecc73116c0",
+        "title": "@post data",
+        "fullFile": "/Users/m.adriansahakbarpratama/Documents/bukalapak/pretest_api_automation/api/test/api_post_test.js",
+        "file": "/api/test/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@post user data",
+            "fullTitle": "@post data @post user data",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "const response = await api_get_request.postDataa(postData);\nconsole.log(response.body)\nexpect(response.status).to.equal(200);",
+            "err": {
+              "message": "ReferenceError: path is not defined",
+              "estack": "ReferenceError: path is not defined\n    at Object.postDataa (api/page/api_post_request.js:7:21)\n    at Context.it (api/test/api_post_test.js:12:48)"
+            },
+            "isRoot": false,
+            "uuid": "23a961b6-fba8-43fe-b0eb-ece161f71228",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "23a961b6-fba8-43fe-b0eb-ece161f71228"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 10000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 10000
+  },
+  "copyrightYear": 2020
+}
